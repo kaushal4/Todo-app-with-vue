@@ -6,7 +6,7 @@
 - do `yarn` or `npm install`
 - do `yarn dev` or `npm run dev` to run the application
 
-##features
+## features
 
 - this has a strike through feature
 - Can detect invalid input
