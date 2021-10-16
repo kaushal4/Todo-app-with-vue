@@ -5,9 +5,9 @@
     input(type="checkbox" v-model="items.checked")
     span(:class="{checked: items.checked}" class="content") {{items.task}}
     button(@click="deleteItem(items.id)") deleteItem
-  .input
+  form(@submit.prevent="addItem").input
     input(type="text" v-model="newTodo")
-    button(@click="addItem") addItem
+    button(type="submit") addItem
   p(v-if="warning.length>0") {{warning}}
 </template>
 
